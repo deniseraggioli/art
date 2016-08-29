@@ -4,14 +4,17 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background: #9f180e;
+    background: url('../img/bkgTransp2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 nav {
-    text-align: right;
-    border-bottom: solid 1px white;
+    text-align: center;
+    border-top: solid 1px white;
+    position:absolute;
+    width:100%;
+    bottom:1px;
 }
 
 .centered {
@@ -94,7 +97,7 @@ nav span {
 
 .title {
     font-size: 50px;
-    font-family: Jura;
+    font-family: Cinzel Decorative;
     text-align: center;
     padding-top: 20%;
     text-rendering: optimizelegibility;
@@ -127,10 +130,6 @@ hr {
     border-bottom: solid 1px #2c2c2c;
 }
 
-strong {
-    color: black;
-}
-
 .centered {
     float: none;
     margin: 0 auto;
@@ -139,7 +138,7 @@ strong {
 .underTitle {
     text-align:center;
     font-size: 15pt;
-    font-family: Dosis; /*Lato*/
+    font-family: Voltaire; /*Lato*/
     font-weight: lighter;
     letter-spacing: 1px;
 }

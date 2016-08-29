@@ -18,7 +18,7 @@ xmlns="http://www.w3.org/1999/xhtml">
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="packages/node_modules/clipboard/dist/clipboard.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Permanent+Marker|Montserrat|Voltaire|Open+Sans+Condensed:300"
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Permanent+Marker|Abel|Montserrat|Voltaire|Open+Sans+Condensed:300"
         rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -78,39 +78,56 @@ xmlns="http://www.w3.org/1999/xhtml">
     </script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid home">
 
         <div class="row rowHome">
-            <nav>
-                <span>
-                    <a href="#passions" id="aContact">CHI SONO</a>
-                </span>
-                <span>
-                    <a href="#passions" id="aContact">DISEGNI</a>
-                </span>
-                <span>
-                    <a href="#contatti" id="aContact">
-                        CONTATTI</a>
-                </span>
-               
-            </nav>
-            <h1 class="col-xs-12 title animated bounceInDown">Denise
+
+            <h1 class="col-xs-12 title animated fadeIn">
+                Denise
                 <strong>Raggioli</strong>
             </h1>
             <hr class="col-xs-12 hrSmall centered" />
             <br />
             <h3 class="underTitle animated fadeIn">
-                
-                <i class="fa fa-paint-brush" aria-hidden="true"></i> Artista contemporanea 
+                Artista emergente
             </h3>
             <br />
             <h3 class="underTitle animated fadeIn">
-                <i class="fa fa-phone" aria-hidden="true"></i> +39 342 7520 220<br />
-                <i class="fa fa-envelope-o" aria-hidden="true"></i> raggiolidenise@hotmail.it
+                <i class="fa fa-phone" aria-hidden="true">
+                </i> +39 342 7520 220 <br />
+                <i class="fa fa-envelope-o" aria-hidden="true">
+                </i> raggiolidenise@hotmail.it
             </h3>
 
+            <nav class="navigation animated fadeIn">
+                <div class="col-sm-4">
+                    <a href="#bio" class="no-decoration">
+                        <button>BIOGRAFIA</button></a>
+                </div>
+                <div class="col-sm-4">
+                    <button>OPERE</button>
+                </div>
+                <div class="col-sm-4">
+                    <button>INFORMAZIONI</button>
+                </div>
+            </nav>
         </div>
-        
+
+    </div>
+    <div class="container-fluid biografia" id="bio">
+        <div class="row rowHome">
+            <div class="col-md-3 col-xs-12">
+                <img src="img/denise.jpg" style="width:300px; opacity:0.8; margin-left:100px; margin-top:50px; border:double 5px #555;"/>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <article>
+                    <hr />
+                    Nasce a Trieste il 31 Luglio 1993, cresce tuttavia nella provincia di Spoleto (Umbria) dove frequenterà la scuola primaria fino al primo anno delle scuole medie. A causa di problemi familiari, si trasferisce a Monfalcone, tornando così nella sua regione natale. Nel 2007 vince un concorso istituito dal Circolo Filatelico e Numismatico Monfalcone, realizzando in occasione del Carnevale, un disegno ispirato alla tradizione del carnevale Monfalconese. Frequenta l'istituto d'arte "Max Fabiani" di Gorizia, diplomandosi nell'ambito della moda e costume. Prosegue i suoi studi artistici presso l'Accademia di Belle Arti di Venezia laureandosi in Pittura nell'ottobre del 2016. Attualmente prosegue gli studi specialistici presso la medesima.
+                    <hr />
+                    
+                </article>
+            </div>
+        </div>
     </div>
     <script>
         var clipboard = new Clipboard('.copy');

@@ -1,6 +1,6 @@
 ﻿
-body {
-    font-family: 'Opens Sans Condensed', sans-serif;
+.home {
+    font-family: 'Open Sans Condensed', sans-serif;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -9,50 +9,48 @@ body {
     background-repeat: no-repeat;
 }
 
-nav {
-    text-align: center;
-    border-top: solid 1px white;
-    position:absolute;
-    width:100%;
-    bottom:1px;
-}
-
-.centered {
-    text-align: center;
-}
-
-a, a:hover {
-    text-decoration: underline;
-    color: #166fc9;
-}
-
-    a:active, a:visited, a:focus {
-        text-decoration: none;
-    }
-
-#aContact, #aContact:hover, #aContact:visited, #aContact:active, #aContact:focus {
-    text-decoration: none;
-    color: white;
-}
-
-nav span {
-    -webkit-transition: all 0.3s ease-in-out;
+.biografia {
+    font-family: 'Open Sans Condensed', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     font-family: Montserrat;
-    padding-right: 3%;
-    cursor: pointer;
-    background: transparent;
-    height: 50px;
-    line-height: 60px;
-    letter-spacing: 1px;
-    text-align: right;
 }
 
-    nav span:hover {
-        -webkit-transition: all 0.3s ease-in-out;
-        text-decoration: underline;
+    .biografia article {
+        margin-left: 0px;
+        margin-top: 50px;
+        font-family:Open Sans Condensed;
+        font-size:14pt;
+        letter-spacing:1px;
+        color:#c8c8c8;
+        max-width:450px;
+        
     }
-
+hr {
+padding: 0;
+border: none;
+border-top: solid 1px #c8c8c8;
+color: #c8c8c8;
+text-align: center;
+}
+hr:after {
+content: url("../img/brush.png");
+display: inline-block;
+position: relative;
+top: -12px;
+padding:1px;
+font-size: 11pt;
+background:#111;
+}
+.no-decoration, .no-decoration:hover, .no-decoration:active, .no-decoration:visited, .no-decoration:focus {
+    color: white;
+    text-decoration: none;
+}
 
 .rowHome {
     height: 100vh;
@@ -60,40 +58,27 @@ nav span {
     display: block;
 }
 
-.rowIntro {
-    padding-top: 50px;
-    background: rgb(255, 255, 255);
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+.navigation {
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 15pt;
 }
 
-.rowContacts {
-    background: url("../img/patternGrey.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #f9f4f4;
-    padding-top: 20px;
-}
+    .navigation button {
+        transition: all 0.3s ease-in-out;
+        border: solid 2px white;
+        padding: 20px;
+        background: transparent;
+        min-width: 200px;
+    }
 
-.arrowDown {
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 3s;
-    color: black;
-}
-
-
-.carousel-indicators li {
-    width: 15px;
-}
-
-.carousel-indicators .actived {
-    background: white;
-}
-
-.carousel-indicators {
-    top: 5px;
-}
+        .navigation button:hover {
+            transition: all 0.3s ease-in-out;
+            background: white;
+            color: black;
+        }
 
 .title {
     font-size: 50px;
@@ -103,22 +88,18 @@ nav span {
     text-rendering: optimizelegibility;
 }
 
-.circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    background: #2c2c2c;
-    line-height: 30px;
-    border-radius: 80px;
-    cursor: pointer;
-    margin-left: 1%;
-}
-
 .hrSmall {
     width: 5%;
     border-bottom: solid 1px white;
+}
+
+.hrSmall:after {
+content: url("../img/brush.png");
+display: inline-block;
+position: relative;
+top: 12px;
+padding:1px;
+background:transparent;
 }
 
 .hrMedium {
@@ -136,7 +117,7 @@ hr {
 }
 
 .underTitle {
-    text-align:center;
+    text-align: center;
     font-size: 15pt;
     font-family: Voltaire; /*Lato*/
     font-weight: lighter;
@@ -162,82 +143,8 @@ hr {
     color: #d32525;
 }
 
-.imgIcons {
-    width: 60px;
-    height: 55px;
-}
-
-.articlePassions {
-    text-align: justify;
-    font-family: Montserrat;
-    font-size: 12pt;
-    max-height: 325px;
-}
-
-.small-centered {
-    text-align: center;
-    font-size: 13pt;
-    font-family: Open Sans Condensed;
-}
-
-.iMail {
-    font-size: 40pt;
-    text-align: center;
-    color: #d32525;
-}
-
-.sMail {
-    font-size: 30pt;
-    text-align: center;
-    font-family: Open Sans Condensed;
-    color: #f6eeee;
-}
-
-.copy {
-    background: #f9f4f4;
-    color: #2c2c2c;
-    margin-bottom: 3%;
-    font-family: Montserrat;
-    font-size: 11pt;
-}
-
-.previewPj {
-    min-width: 150px;
-    min-height: 120px;
-    width: 100%;
-    max-height: 250px;
-}
-
-.imgSmall {
-    width: 70px;
-    height: 70px;
-    margin-left: 8%;
-}
-
-.mbi {
-    width: 30%;
-    margin: 0 auto;
-}
-
-    .mbi img {
-        margin-left:20px;
-    }
-
 @media (max-width: 900px) {
     nav span {
         display: none;
     }
-}
-@media (max-width: 600px) {
-
-    .articlePassions, .media {
-        font-size: 10pt !important;
-    }
-
-    .mbi {
-        width:100%;
-    }
-        .mbi img {
-            margin-left:0px;
-        }
 }

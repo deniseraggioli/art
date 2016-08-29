@@ -7,6 +7,7 @@
     background: url('../img/bkgT1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .biografia {
@@ -19,34 +20,43 @@
     background-repeat: no-repeat;
     color: white;
     font-family: Montserrat;
+
 }
 
     .biografia article {
         margin-left: 0px;
-        margin-top: 50px;
-        font-family:Open Sans Condensed;
-        font-size:14pt;
-        letter-spacing:1px;
-        color:#c8c8c8;
-        max-width:450px;
-        
+        margin-top: 55px;
+        font-family: Open Sans Condensed;
+        font-size: 14pt;
+        letter-spacing: 1px;
+        color: #c8c8c8;
+        max-width: 450px; 
     }
+
+.denise2 {
+    background-image:url("../img/denise2.jpg");
+    background-size:cover;
+    height:600px;
+}
+
 hr {
-padding: 0;
-border: none;
-border-top: solid 1px #c8c8c8;
-color: #c8c8c8;
-text-align: center;
+    padding: 0;
+    border: none;
+    border-top: solid 1px #c8c8c8;
+    color: #c8c8c8;
+    text-align: center;
 }
-hr:after {
-content: url("../img/brush.png");
-display: inline-block;
-position: relative;
-top: -12px;
-padding:1px;
-font-size: 11pt;
-background:#111;
-}
+
+    hr:after {
+        content: url("../img/brush.png");
+        display: inline-block;
+        position: relative;
+        top: -12px;
+        padding: 1px;
+        font-size: 11pt;
+        background: #111;
+    }
+
 .no-decoration, .no-decoration:hover, .no-decoration:active, .no-decoration:visited, .no-decoration:focus {
     color: white;
     text-decoration: none;
@@ -56,6 +66,14 @@ background:#111;
     height: 100vh;
     color: white;
     display: block;
+}
+
+.artistImg {
+    width: 300px;
+    opacity: 0.8;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: double 5px #c8c8c8;
 }
 
 .navigation {
@@ -93,14 +111,14 @@ background:#111;
     border-bottom: solid 1px white;
 }
 
-.hrSmall:after {
-content: url("../img/brush.png");
-display: inline-block;
-position: relative;
-top: 12px;
-padding:1px;
-background:transparent;
-}
+    .hrSmall:after {
+        content: url("../img/brush.png");
+        display: inline-block;
+        position: relative;
+        top: 12px;
+        padding: 1px;
+        background: transparent;
+    }
 
 .hrMedium {
     border-bottom: solid 1px #2c2c2c;
@@ -146,5 +164,8 @@ hr {
 @media (max-width: 900px) {
     nav span {
         display: none;
+    }
+    .artistImg {
+        margin-left:0px;
     }
 }

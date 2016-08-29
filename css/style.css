@@ -1,0 +1,245 @@
+﻿
+body {
+    font-family: 'Opens Sans Condensed', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #16c99b;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    text-align: right;
+    border-bottom: solid 1px white;
+}
+
+.centered {
+    text-align: center;
+}
+
+a, a:hover {
+    text-decoration: underline;
+    color: #166fc9;
+}
+
+    a:active, a:visited, a:focus {
+        text-decoration: none;
+    }
+
+#aContact, #aContact:hover, #aContact:visited, #aContact:active, #aContact:focus {
+    text-decoration: none;
+    color: white;
+}
+
+nav span {
+    -webkit-transition: all 0.3s ease-in-out;
+    color: white;
+    font-family: Montserrat;
+    padding-right: 3%;
+    cursor: pointer;
+    background: transparent;
+    height: 50px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+    nav span:hover {
+        -webkit-transition: all 0.3s ease-in-out;
+        text-decoration: underline;
+    }
+
+
+.rowHome {
+    height: 100vh;
+    color: white;
+    display: block;
+}
+
+.rowIntro {
+    padding-top: 50px;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rowContacts {
+    background: url("../img/patternGrey.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f9f4f4;
+    padding-top: 20px;
+}
+
+.arrowDown {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    color: black;
+}
+
+
+.carousel-indicators li {
+    width: 15px;
+}
+
+.carousel-indicators .actived {
+    background: white;
+}
+
+.carousel-indicators {
+    top: 5px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: Jura;
+    text-align: center;
+    padding-top: 20%;
+    text-rendering: optimizelegibility;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: #2c2c2c;
+    line-height: 30px;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+.hrSmall {
+    width: 5%;
+    border-bottom: solid 1px white;
+}
+
+.hrMedium {
+    border-bottom: solid 1px #2c2c2c;
+    width: 50%;
+}
+
+hr {
+    border-bottom: solid 1px #2c2c2c;
+}
+
+strong {
+    color: #2c2c2c;
+}
+
+.centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.underTitle {
+    margin-top: 0;
+    font-size: 15pt;
+    text-align: center;
+    font-family: Dosis; /*Lato*/
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.titleMediumSize {
+    text-align: center;
+    font-family: Jura;
+    font-size: 20pt;
+    letter-spacing: 0px;
+    margin-top: -20px;
+}
+
+.titleSmallSize {
+    text-align: center;
+    font-family: Permanent Marker;
+    font-size: 25pt;
+}
+
+.titleMediumSize span {
+    font-weight: bold;
+    color: #d32525;
+}
+
+.imgIcons {
+    width: 60px;
+    height: 55px;
+}
+
+.articlePassions {
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 12pt;
+    max-height: 325px;
+}
+
+.small-centered {
+    text-align: center;
+    font-size: 13pt;
+    font-family: Open Sans Condensed;
+}
+
+.iMail {
+    font-size: 40pt;
+    text-align: center;
+    color: #d32525;
+}
+
+.sMail {
+    font-size: 30pt;
+    text-align: center;
+    font-family: Open Sans Condensed;
+    color: #f6eeee;
+}
+
+.copy {
+    background: #f9f4f4;
+    color: #2c2c2c;
+    margin-bottom: 3%;
+    font-family: Montserrat;
+    font-size: 11pt;
+}
+
+.previewPj {
+    min-width: 150px;
+    min-height: 120px;
+    width: 100%;
+    max-height: 250px;
+}
+
+.imgSmall {
+    width: 70px;
+    height: 70px;
+    margin-left: 8%;
+}
+
+.mbi {
+    width: 30%;
+    margin: 0 auto;
+}
+
+    .mbi img {
+        margin-left:20px;
+    }
+
+@media (max-width: 900px) {
+    nav span {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+
+    .articlePassions, .media {
+        font-size: 10pt !important;
+    }
+
+    .mbi {
+        width:100%;
+    }
+        .mbi img {
+            margin-left:0px;
+        }
+}

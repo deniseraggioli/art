@@ -17,7 +17,6 @@ xmlns="http://www.w3.org/1999/xhtml">
     <link href="css/hover.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <script src="packages/node_modules/clipboard/dist/clipboard.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Permanent+Marker|Abel|Montserrat|Voltaire|Open+Sans+Condensed:300"
         rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -74,11 +73,24 @@ xmlns="http://www.w3.org/1999/xhtml">
                 $("body").stop().css("background-image", "url('../img/patternGreen.svg')");
 
             });
+
+            $("#btnBio").click(function () {
+                
+                $("#bio").css("display", "block");
+
+            });
+
+            $("#btnInfo").click(function () {
+                
+                $("#info").css("display", "block");
+
+            });
         });
     </script>
 </head>
 <body>
-    <div class="container-fluid home" id="home">
+    <div class="container-fluid home"
+        id="home">
 
         <div class="row rowHome">
 
@@ -92,92 +104,85 @@ xmlns="http://www.w3.org/1999/xhtml">
                 Artista emergente
             </h3>
             <br />
-            <h3 class="underTitle animated fadeIn">
-                <i class="fa fa-phone" aria-hidden="true">
-                </i>+39 342 7520 220
-                <br />
-                <i class="fa fa-envelope-o" aria-hidden="true">
-                </i>raggiolidenise@hotmail.it
-            </h3>
+            
 
             <nav class="navigation animated fadeIn">
                 <div class="col-sm-4">
                     <a href="#bio" class="no-decoration">
-                        <button>BIOGRAFIA</button></a>
+                        <button id="btnBio">BIOGRAFIA</button></a>
                 </div>
                 <div class="col-sm-4">
                     <button>OPERE</button>
                 </div>
                 <div class="col-sm-4">
-                    <button>INFORMAZIONI</button>
+                    <a href="#info" class="no-decoration"><button id="btnInfo">CONTATTI</button></a>
                 </div>
             </nav>
         </div>
 
     </div>
     <div class="container-fluid biografia"
-        id="bio">
+        id="bio" style="display: none;">
         <div class="row">
-            
-            <div class="col-sm-4 denise2">
+            <div class="col-xs-12" style="float:none; margin:0 auto;">
 
-            </div>
-            <div class="media col-sm-8">
-                <div class="media-left media-middle">
-                    
-                        <img src="img/denise.jpg" class="artistImg" />
-                    
-                </div>
-                <div class="media-body">
-                    <article>
-                        
-                        Nasce a Trieste il 31 Luglio 1993,
-                        cresce tuttavia nella provincia
-                        di Spoleto (Umbria) dove frequenterà
-                        la scuola primaria fino al primo
-                        anno delle scuole medie. A causa
-                        di problemi familiari, si trasferisce
-                        a Monfalcone, tornando così nella
-                        sua regione natale. Nel 2007 vince
-                        un concorso istituito dal Circolo
-                        Filatelico e Numismatico Monfalcone,
-                        realizzando in occasione del Carnevale,
-                        un disegno ispirato alla tradizione
-                        del carnevale Monfalconese. Frequenta
-                        l'istituto d'arte "Max Fabiani"
-                        di Gorizia, diplomandosi nell'ambito
-                        della moda e costume. Prosegue
-                        i suoi studi artistici presso
-                        l'Accademia di Belle Arti di Venezia
-                        laureandosi in Pittura nell'ottobre
-                        del 2016. Attualmente prosegue
-                        gli studi specialistici presso
-                        la medesima.
+            <img src="img/denise.jpg" class="artistImg col-xs-12 col-sm-3" />
+
+
+            <article class="col-xs-12 col-sm-9">
+                Nasce a Trieste il 31 Luglio 1993,
+                cresce tuttavia nella provincia
+                di Spoleto (Umbria) dove frequenterà
+                la scuola primaria fino al primo
+                anno delle scuole medie. A causa
+                di problemi familiari, si trasferisce
+                a Monfalcone, tornando così nella
+                sua regione natale. Nel 2007 vince
+                un concorso istituito dal Circolo
+                Filatelico e Numismatico Monfalcone,
+                realizzando in occasione del Carnevale,
+                un disegno ispirato alla tradizione
+                del carnevale Monfalconese. Frequenta
+                l'istituto d'arte "Max Fabiani"
+                di Gorizia, diplomandosi nell'ambito
+                della moda e costume. Prosegue
+                i suoi studi artistici presso
+                l'Accademia di Belle Arti di Venezia
+                laureandosi in Pittura nell'ottobre
+                del 2016. Attualmente prosegue
+                gli studi specialistici presso
+                la medesima.
                     <hr />
-                        <a href="#home" class="no-decoration" style="float:right; font-size:11pt;">Torna su</a>
-                    </article>
-                </div>
+                <a href="#home" class="no-decoration"
+                    style="float: right; font-size: 11pt;">
+                    Torna su</a>
+            </article>
+
+        </div>
+            </div>
+    </div>
+
+    <div class="container-fluid info"
+        id="info" style="display: none;">
+        <div class="row">
+
+            <h1 class="col-xs-12">Per qualsiasi informazione, contattami! <hr class="hrMedium" /></h1>
+            
+            <div class="bookContacts col-xs-12 col-sm-6">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+39 342 7520 220</span>
+                <br />
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>raggiolidenise@hotmail.it</span>
+            </div>
+            <div class="credits col-xs-12 col-sm-6">
+                Questo è un sito rappresentativo delle Opere di Denise Raggioli.
+                Tutte le immagini e i dipinti sono originali e non è permessa la copia degli stessi senza previa autorizzazione
+                o senza dare credito alla sottoscritta.<br />
+                Questo sito è stato realizzato da <a href="http://alessioraggioli.github.io/">Alessio Raggioli</a>
             </div>
         </div>
     </div>
-    <script>
-        var clipboard = new Clipboard('.copy');
-
-        clipboard.on('success', function (e) {
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
-            $(".copy").css("background-color", "#5cb85c");
-            $(".copy").css("font-weight", "bold");
-            $(".copy").html("Copied <i class='fa fa-check' aria-hidden='true'></i>");
-            e.clearSelection();
-        });
-
-        clipboard.on('error', function (e) {
-            console.error('Action:', e.action);
-            console.error('Trigger:', e.trigger);
-        });
-
-    </script>
+    
 </body>
 </html>

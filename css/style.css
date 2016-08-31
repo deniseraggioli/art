@@ -13,15 +13,48 @@
 .biografia {
     font-family: 'Open Sans Condensed', sans-serif;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    padding-bottom:50px;
     background: #111;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     font-family: Montserrat;
-
+    float:none;
+    margin: 0 auto;
 }
+
+.info {
+    font-family: 'Open Sans Condensed', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    padding-bottom:50px;
+    background: #c8c8c8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: Montserrat;
+    text-align:center;
+}
+
+    .info h1 {
+        text-align:center;
+        font-size:20pt;
+    }
+
+    .info .bookContacts {
+        
+        font-size:20pt;
+    }
+
+    .info .credits {
+        
+        font-size:11pt;
+    }
+    .info .bookContacts i{
+       margin-right:30px;   
+    }
+
 
     .biografia article {
         margin-left: 0px;
@@ -32,12 +65,6 @@
         color: #c8c8c8;
         max-width: 450px; 
     }
-
-.denise2 {
-    background-image:url("../img/denise2.jpg");
-    background-size:cover;
-    height:600px;
-}
 
 hr {
     padding: 0;
@@ -70,10 +97,11 @@ hr {
 
 .artistImg {
     width: 300px;
+    height: 300px;
     opacity: 0.8;
     margin-left: 100px;
     margin-top: 50px;
-    border: double 5px #c8c8c8;
+    border-radius:50%;
 }
 
 .navigation {
@@ -121,9 +149,18 @@ hr {
     }
 
 .hrMedium {
-    border-bottom: solid 1px #2c2c2c;
+    border-bottom: solid 1px #111;
     width: 50%;
 }
+
+.hrMedium:after {
+        content: url("../img/brush2.png");
+        display: inline-block;
+        position: relative;
+        top: -18px;
+        padding: 10px;
+        background: #c8c8c8;
+    }
 
 hr {
     border-bottom: solid 1px #2c2c2c;
@@ -161,11 +198,29 @@ hr {
     color: #d32525;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     nav span {
         display: none;
     }
+
     .artistImg {
-        margin-left:0px;
+        margin-left: 0px;
+    }
+
+    .navigation button {
+        transition: all 0.3s ease-in-out;
+        border: solid 2px white;
+        padding: 10px;
+        background: transparent;
+        max-width: 120px;
+        font-size: 10pt;
+    }
+
+    .info .bookContacts{
+        font-size:15pt;
+}
+    .info .bookContacts i{
+       margin-right:1px;   
+       font-size:16pt;
     }
 }
